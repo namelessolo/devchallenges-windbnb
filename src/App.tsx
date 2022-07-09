@@ -4,6 +4,7 @@ import ApartmentsList from "./components/ApartmentsList/ApartmentsList";
 import DropdownMenu from "./components/DropdownMenu/DropdownMenu";
 import { useMenuContext } from "./store/MenuProvider";
 import Modal from "./components/Modal/Modal";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const { state } = useMenuContext();
@@ -12,11 +13,13 @@ function App() {
     <Container>
       <Menu />
       <ApartmentsList />
-      {state.dropdownMenu && (
-        <Modal>
-          <DropdownMenu />
-        </Modal>
-      )}
+      <AnimatePresence>
+        {state.dropdownMenu && (
+          <Modal>
+            <DropdownMenu />
+          </Modal>
+        )}
+      </AnimatePresence>
     </Container>
   );
 }

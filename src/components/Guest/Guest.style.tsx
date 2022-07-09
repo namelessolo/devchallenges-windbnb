@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   margin: 18px 0 0 30px;
   grid-column: 2/3;
   grid-row: 3/4;

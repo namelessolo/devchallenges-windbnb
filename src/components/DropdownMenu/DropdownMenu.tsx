@@ -8,18 +8,16 @@ import { useMenuContext } from "../../store/MenuProvider";
 import { ActionEnum } from "../../types/types";
 import Error from "../Error/Error";
 
-const variants = {
-  open: { y: 0, x: "-50%" },
-  closed: { y: -300, x: "-50%" },
-};
-
 const DropdownMenu = () => {
   const { state, dispatch } = useMenuContext();
 
-  //animate={state.dropdownMenu ? "open" : "closed"} variants={variants}
-
   return (
-    <Wrapper>
+    <Wrapper
+      initial={{ y: "-100vh", x: "-50%" }}
+      animate={{ y: 0, x: "-50%" }}
+      exit={{ y: "-50vh", x: "-50%", transition: { duration: 0.2 } }}
+      key="modal"
+    >
       <Edit>
         <p>Edit your search</p>
         <p>

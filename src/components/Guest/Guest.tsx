@@ -1,11 +1,12 @@
 import { Wrapper, TypeContainer, Buttons } from "./Guest.style";
 import { useMenuContext } from "../../store/MenuProvider";
 import { ActionEnum } from "../../types/types";
+import { AnimatePresence } from "framer-motion";
 
 const Guest = () => {
   const { state, dispatch } = useMenuContext();
   return (
-    <Wrapper>
+    <Wrapper initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key="guests">
       <TypeContainer>
         <p>Adults</p>
         <p>Ages 13 or above</p>
