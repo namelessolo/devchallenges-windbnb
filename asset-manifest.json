@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/devchallenges-windbnb/static/js/main.2be7d53a.js",
+    "main.js": "/devchallenges-windbnb/static/js/main.15d705a6.js",
     "static/media/logo.svg": "/devchallenges-windbnb/static/media/logo.beef9462a899fe60cb52edfd446e26ef.svg",
     "index.html": "/devchallenges-windbnb/index.html",
-    "main.2be7d53a.js.map": "/devchallenges-windbnb/static/js/main.2be7d53a.js.map"
+    "main.15d705a6.js.map": "/devchallenges-windbnb/static/js/main.15d705a6.js.map"
   },
   "entrypoints": [
-    "static/js/main.2be7d53a.js"
+    "static/js/main.15d705a6.js"
   ]
 }
